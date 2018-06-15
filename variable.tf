@@ -8,7 +8,7 @@ variable "nodeType" {
 
 variable "NewNodeIPs" {
   description = "IP of new node"
-  type = "list"
+  #type = "list"
 }
 
 variable "root_password" {
