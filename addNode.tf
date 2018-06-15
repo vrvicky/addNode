@@ -8,10 +8,10 @@ resource "null_resource" "addNode" {
   "echo ${var.dependsOn}",
       ]
   connection {
-    host = "161.202.174.82"
+    host = "${var.bootIP}"
     type     = "ssh"
     user     = "root"
-    password = "icam1234$$"
+    password = "${var.root_password}"
   }
  }
 }
